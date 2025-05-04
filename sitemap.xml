@@ -2,15 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <!-- replace WEBSITE with the address where this site is being hosted -->
    <url>
-       <loc>WEBSITE</loc>
+       <loc>deu-Seminar</loc>
    </url>
    <url>
-       <loc>WEBSITE/registration</loc>
+       <loc>deu-Seminar/registration</loc>
    </url>
    <url>
-       <loc>WEBSITE/program</loc>
+       <loc>deu-Seminar/program</loc>
    </url>
    <url>
-       <loc>WEBSITE/directions</loc>
+       <loc>deu-Seminar/directions</loc>
+   </url>
+   <url>
+       <loc>deu-Seminar/lecturer</loc>
    </url>
 </urlset> 
