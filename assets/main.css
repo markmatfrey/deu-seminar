@@ -14,6 +14,16 @@
  */
 
  @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+ @import url(responsive.css);
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+
 
  *{
      border:0;
@@ -111,14 +121,6 @@
  
  /* Website Banner */
  .bottom-left {color: #032c48; font-size:1.5em; text-align: left; padding: 0px 27px 27px 0px;}
- 
- .image-blurred-edge {
-    background-image: url('https://picsum.photos/200/300');
-    width: 200px;
-    height: 200px;
-    /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 10 10 8px 8px white inset;
-  }
 
  .contact_main{
 	width: 100%;
@@ -152,8 +154,38 @@
  
  /* Navigation Links (Home, Registration, etc) */
  table.navigation{width:800px;}
- td.navigation{font-size:1em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
- 
+ td.navigation{font-size:1em; white-space:nowrap; width:20%; text-align:center; 
+    vertical-align:middle; padding:0px 0px 0px 0px;}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 60px;
+    padding-left: 0;
+    color: rgba(16, 16, 73, 0.943);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav.mr-auto {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.navbar-nav.mr-auto li {
+    float: left;
+}
+
+.navbar-nav.mr-auto li.last {
+    float: right;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+        color: #fb2323;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+        color: #fb2323;
+} 
  
  /* The Table on the Program Page */
  td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
