@@ -30,14 +30,14 @@
      background-attachment: fixed;
      color: #505050; 
      text-align:left;
-     font-family:'Roboto',sans-serif;
+     font-family:'Gill Sans Extrabold', sans-serif;
      font-size:1em;
      line-height:1.5em;
      margin: 60px auto;
      width: 1000px;
  }
  
- code {
+ consschrift {
     font-family: Consolas, "courier new";    
     font-size: 120%;
 }
@@ -58,7 +58,14 @@
  a.current:hover{color: #e82945;}
  a:hover{color: #b2132e;}
  a:active{color: #e82945;}
- h1,h2,h3,h4{clear:left; color: #032c48; line-height: 1.38; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+ h1,h2,h3,h4{clear:left; 
+    color: #032c48; 
+    line-height: 1.38; 
+    margin:1.5em 0em 1em 0em; 
+    font-family:'Gill Sans Extrabold',sans-serif; 
+    text-shadow: 1px 1px 2px #d0d0d0;
+    font-weight: bold;}
+
  h1{font-size:2.5em;}
  h2{font-size:2em;}
  h3{font-size:1.5em;}
@@ -103,11 +110,41 @@
  }
  
  /* Website Banner */
- .banner {position: relative; font-family:'Roboto Slab',serif;}
- .top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
  .bottom-left {color: #032c48; font-size:1.5em; text-align: left; padding: 0px 27px 27px 0px;}
- .bottom-rightl {font-size:2.33em; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
  
+ .image-blurred-edge {
+    background-image: url('https://picsum.photos/200/300');
+    width: 200px;
+    height: 200px;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 10 10 8px 8px white inset;
+  }
+
+ .contact_main{
+	width: 100%;
+    color: #032c48;
+	float: left;
+	background-color: #fafafa;
+	padding-top: 40px;
+}
+
+.contact_section_2{
+	width: 30%;
+	margin: 0 auto;
+	display: block;
+	padding-top: 20px;
+}
+
+.touch_text{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	color: #032c48;
+	font-size: 22pt;
+	font-weight: bold;
+}
+
 
  /* Conference Title Logo */
  .title1{color: #032c48; font-size: 2.5em; text-align: center; margin-bottom: 20px; padding-top: 10px; line-height: 1.38; font-weight: 900;} 
