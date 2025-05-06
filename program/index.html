@@ -3,7 +3,6 @@
 
 <head>
     <base href="..">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
 
@@ -16,39 +15,42 @@
     
     <style>
         .collapsible {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            margin-left: 24px;
         }
 
         .activeCol, .collapsible:hover {
-        background-color: #555;
+            background-color: #555;
         }
 
         .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
         }
 
         .activeCol:after {
-        content: "\2212";
+            content: "\2212";
         }
 
         .content_collapsible {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: #f1f1f1;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            margin-left: 24px;
+            width: 100%;
         }
 
          /* My hacky way of making the site mobile-friendly */
@@ -72,38 +74,36 @@
                 </div>
             </div>
         </div>
- 
         <div class="bottom-left">
             <p ><strong>Wann</strong>: 23./24. Oktober, 2025 &emsp; <strong>Wo</strong>: Schloss Marbach am Bodensee </p>
-        </div>      
+        </div>
     </div>
 
-
-    <div class="menu-area">
-        <nav class="navbar navbar-expand-lg ">         
-            <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg">
+        <div >
+            <ul class="navbar-nav mr-auto" >
                 <li style="padding-right: 20px; font-size: 16px; letter-spacing: 0.5px;">
                     <strong>Verlinkungen:</strong>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active" >
                     <a style="padding-right: 20px;" title="deu-seminar" href="index.html">Startseite</a> </li>
                 <li class="nav-item">
-                    <a class="active" style="padding-right: 20px;"title="Programmpunkte" href="program">Agenda</a></li>
+                    <a class="active" style="padding-right: 20px;" title="Programmpunkte" href="program">Agenda</a></li>
                 <li class="nav-item">
                     <a style="padding-right: 20px;" title="Registrierung für das Seminar" href="registration/">Anmeldung</a></li>
-                <li class="nav-item">
+                <li class="nav-item" >
                     <a style="padding-right: 20px;" title="Tagungshotel" href="directions/">Tagungsort</a></li>
-                <li class="nav-item">
+                <li class="nav-item" >
                     <a style="padding-right: 20px;" title="Referenten" href="lecturer/">Wer sind wir</a></li>
+                <li class="nav-item" >
+                    <a style="padding-right: 20px;" title="Durchgeführte Beispielprojekte" href="projects/">Projektberichte</a></li>
             </ul>
-        </nav>
-    </div>
-
-
-    <div >
-        <h2>Agenda</h2>
-    </div>
-
+        </div>
+    </nav>
+    
+    <h2 >Agenda</h2>
+    
+    <div>
     <button class="collapsible">22. Oktober - <strong>Ankunft und erstes Kennelernen</strong></button>
         <div class="content_collapsible">
             <table style="margin-left:48px;">
@@ -117,7 +117,7 @@
                 </tr>
             </table>
         </div>
-        
+    </div>
         <br />
         <br />
         
