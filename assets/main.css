@@ -13,8 +13,8 @@
  *   #b8860b; Dark Goldenrod, color for links
  */
 
- @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
- @import url(responsive.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+@import url(responsive.css);
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(meanmenu.css);
