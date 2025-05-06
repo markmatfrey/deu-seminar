@@ -1,0 +1,36 @@
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Projektkurzbericht: Verschnittoptimierung bei GSE mbH, Freudenberg</span></strong></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Projektbezeichnung:</span></strong><span style="color:#404040;"><br>&nbsp;Mathematische Optimierung von Zuschnittsproblemen f&uuml;r Papiere und Folien</span></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Projektziel:</span></strong><span style="color:#404040;"><br>&nbsp;Entwicklung und Implementierung von mathematischen Optimierungsverfahren zur Minimierung von Verschnitt und Messerumstellungen bei der Rollenproduktion, um Materialverluste und Produktionskosten zu reduzieren und sich von der manuellen Erstellung von Verschnittpl&auml;nen weg zu bewegen.</span></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Hintergrund:</span></strong><span style="color:#404040;"><br>&nbsp;Manuelle Zuschnittsplanung ben&ouml;tigt bei komplexeren Portfolios zwei bis drei Tage. Durch mathematische Optimierung sollte der Verschnitt reduziert und die Produktionseffizienz gesteigert werden.</span></p>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Vorgehensweise:</span></strong></p>
+<ul style="list-style-type: disc;margin-left: 26px;">
+    <li><span style="color:#404040;">Das eindimensionalen Zuschnittsproblems (Cutting Stock Problem) mit einer Mutterrolle und einer Menge von Auftragsrollen mit spezifierten Nachfrage und Breiten&nbsp;f&uuml;hrt auf ein gemischt-ganzzahliges Minimierungsproblem - MINLP)</span></li>
+    <li><span style="color:#404040;">Implementiert wurden drei L&ouml;sungsmethoden in GAMS:</span>
+        <ol style="list-style-type: decimal;">
+            <li><strong><span style="color:#404040;">Gilmore-und-Gomory-Ansatz</span></strong><span style="color:#404040;">&nbsp;(dynamisches Dekompositionsverfahren)</span></li>
+            <li><strong><span style="color:#404040;">Spaltenenumeration </span></strong><strong><span style="color:#404040;">(statisches Dekompositionsverfahren)</span></strong></li>
+            <li><strong><span style="color:#404040;">Exhaustion-Methode</span></strong><span style="color:#404040;">&nbsp;(ersch&ouml;pfende Suche)</span></li>
+        </ol>
+    </li>
+</ul>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">L&ouml;sungsansatz:</span></strong></p>
+<ul style="list-style-type: disc;margin-left: 26px;">
+    <li><span style="color:#404040;">Formulierung als <strong>gemischt-ganzzahliges nichtlineares Optimierungsproblem</strong></span></li>
+    <li><span style="color:#404040;">Automatisierte Generierung optimaler Zuschnittpl&auml;ne</span></li>
+    <li><span style="color:#404040;">Integration in das bestehende ERP-System GSE-TRIM.</span></li>
+</ul>
+<p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;background:white;'><strong><span style="color:#404040;">Ergebnis &amp; kommerzieller Impact:</span></strong></p>
+<ul class="decimal_type" style="list-style-type: disc;margin-left: 26px;">
+    <li><strong><span style="color:#404040;">Reduzierter Verschnitt</span></strong><span style="color:#404040;">: <strong>3&ndash;6 % weniger Materialverlust</strong> im Vergleich zur manuellen Planung</span></li>
+    <li><strong><span style="color:#404040;">Kosteneinsparungen</span></strong><span style="color:#404040;">:</span>
+        <ol class="decimal_type" style="list-style-type: circle;">
+            <li><span style="color:#404040;">Bei 50.000 Tonnen Jahresproduktion entspricht 3 % Verschnittreduktion <strong>1.500 Tonnen weniger Abfall</strong></span></li>
+            <li><span style="color:#404040;">Einsparungen von <strong>285.000 &euro;/Jahr</strong> (bei Produktionskosten von 190 &euro;/Tonne)</span></li>
+            <li><strong><span style="color:#404040;">ROI in nur 2 Monaten</span></strong><span style="color:#404040;">&nbsp;(Anschaffungskosten: 30.000&ndash;40.000 &euro;)</span></li>
+        </ol>
+    </li>
+    <li><strong><span style="color:#404040;">Geringere Abh&auml;ngigkeit von erfahrenen Mitarbeitern</span></strong><span style="color:#404040;">&nbsp;bei Urlaub und Krankheit.&nbsp;</span></li>
+    <li><strong><span style="color:#404040;">Zeitersparnis: </span></strong><strong><span style="color:#404040;">Sekunden bis wenige Minuten gegen&uuml;ber zwei bis drei Tage manueller Arbeit ohne mathematische Optimierung.</span></strong></li>
+</ul>
+<p style='margin:0cm;font-size:13px;font-family:"Times New Roman",serif;'><strong><span style="font-size:16px;">Referenz:</span></strong><span style="font-size:16px;"><br> Detaillierte Informationen und technische Hintergr&uuml;nde finden sich unter: <a href="http://dx.doi.org/10.1016/j.ejor.2014.03.027">http://dx.doi.org/10.1016/j.ejor.2014.03.027</a>&nbsp; und</span></p>
+<p style='margin:0cm;font-size:13px;font-family:"Times New Roman",serif;'><span style="font-size:16px;"><a href="https://www.gse-software.de/de/">https://www.gse-software.de/de/</a>&nbsp;</span></p>
