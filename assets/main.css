@@ -120,7 +120,7 @@
  }
  
  /* Website Banner */
- .bottom-left {color: #032c48; font-size:1.5em; text-align: left; padding: 0px 27px 27px 0px;}
+ .bottom-left {color: #032c48; font-size:1.5em; text-align: left; padding: 0px 50px 27px 0px;}
 
  .contact_main{
 	width: 100%;
@@ -165,27 +165,32 @@
     letter-spacing: 0.5px;
 }
 
-.navbar-nav.mr-auto {
+.navbar-nav .mr-auto {
     width: 100%;
     margin: 0;
     display: block;
 }
-
 .navbar-nav.mr-auto li {
     float: left;
 }
-
-.navbar-nav.mr-auto li.last {
+.navbar-nav .mr-auto li.last {
     float: right;
 }
 
-.navbar-light .navbar-nav .active>.nav-link{
-        color: #fb2323;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fb2323;
+} 
+.navbar-link:hover {
+    color: #fb2323;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-        color: #fb2323;
-} 
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #fb2323;
+}
+
+.active {
+    color: #fb2323;
+}
  
  /* The Table on the Program Page */
  td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
