@@ -1,20 +1,85 @@
 <!DOCTYPE html>
-<html lang='de'>
-
+<html>
 <head>
-    <base href="..">
+    <base href=".."> 
+
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/responsive.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+ 
     <meta name="description" content="deu-seminar">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registrierung</title>
+    <title >dEU - Seminar für datenbasierte Entscheidung für Unternehmer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Header/Blog Title */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+     }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    }
+    </style>
 </head>
 
 <body>
@@ -31,12 +96,14 @@
                 </div>
             </div>
         </div>
- 
+        
         <div class="bottom-left">
             <p><strong>Wann</strong>: 23./24. Oktober, 2025 &emsp; <strong>Wo</strong>: Schloss Marbach am Bodensee </p>
         </div>
     </div>
+    
     <nav class="navbar navbar-expand-lg">
+        <!-- <a class="navbar-brand" href="#">Menu</a> -->
         <div >
             <ul class="navbar-nav mr-auto" >
                 <li style="padding-right: 20px; font-size: 16px; letter-spacing: 0.5px;">
@@ -59,42 +126,130 @@
     </nav>
 
 
-    <h2>Beispielprojekte aus der Praxis</h2>
-    <div>
-        <p>
-        <h3>Produzierendes Gewerbe</h3>
-            <ul>
-                <li><strong>Verschnittoptimierung in der Produktion:</strong> <br />
-                    Entwicklung und Implementierung von mathematischen Optimierungsverfahren zur 
-                    Minimierung von Verschnitt und Messerumstellungen bei der Rollenproduktion, um Materialverluste und Produktionskosten zu reduzieren 
-                    und sich von der manuellen Erstellung von Verschnittplänen weg zu bewegen.
-                    <a title="Cutting Stock" href="Proj_Cutting.html">Details</a>
-                </li>
-                <li><strong>Prognose von innovativen neuartigen Produkten:</strong> <br />
-                    Analyse und Prognose der Verkaufszahlen bei Einfürhung von innovativen, neuartigen Produkten, damit  
-                    die Nachfrage bei Verkaufsstart bedient werden kann und gleichzeigig die Lagerkosten minimiert werden. 
-                </li>
-            </ul>
-        </p>
-        <p> 
-            <h3>Logistik</h3>
-        </p>    
-        <p>
-            <h3>Dienstleistungssektor</h3> 
-            <ul>
-                <li><strong>Optimale Belegung der Gepäckbänder an Flughäfen:</strong> <br />
-                    Entwicklung und Impelementierung eines Verfahrens zur Belegung von Gepäckausgabebändern zur Minimierung 
-                    der Wartezeiten der Passagiere und um eine gleichemäßige Auslastung der Bänder zu erreichen.         
-                </li>
-            </ul>
-        </p>
+<div >
+  <h2>Referenzprojekte</h2>
+</div>
+<p>Auf dieser Seite präsentieren wir einige unserer Projekte, 
+    die wir in Kooperation mit unseren 
+    Industriepartner durchgeführt haben. Für weitere Details klicken Sie bitte 
+    jeweils auf den Link "Mehr Details".
+</p>
+
+<h3 style="margin-left: 48px;"> Produktion</h3>
+
+    <div class="card" style="margin-left: 48px;">
+      <h4>Optimale Verschnittplanung </h4>
+        <table>
+            <tr >
+                <th style="width: 200px;vertical-align: middle;"><strong>Fragestellung</strong></th>
+                <th>Manuelle Zuschnittsplanung benötigt bei komplexeren Portfolios zwei 
+                    bis drei Tage. Durch mathematische Optimierung sollte der Verschnitt 
+                    reduziert und die Produktionseffizienz gesteigert werden.</th>
+            </tr>
+            <tr>
+                <th><strong>Erfolg</strong></td>
+                <th>Kosteneinsparung in Höhe von 285.000 Euro pro Jahr</td>
+            </tr>
+        </table>
+        <div >
+        <p style="text-align: right;"> <a href="#"> Mehr Details</a></p>
+        </div>
     </div>
 
+    <div class="card" style="margin-left: 48px;">
+        <h4>Optimale weltweite Produktionsplanung in der chemische Industrie </h4>
+          <table>
+              <tr >
+                  <th style="width: 200px;vertical-align: middle;"><strong>Fragestellung</strong></th>
+                  <th> Entwicklung eines mathematischen Optimierungsmodells zur Maximierung des Deckungsbeitrags 
+                    in einem weltweiten Produktionsnetzwerk unter Berücksichtigung von Standortkapazitäten, 
+                    Transportrestriktionen und Marktnachfrage.</th>
+              </tr>
+              <tr>
+                  <th><strong>Erfolg</strong></td>
+                  <th>Deckungsbeitragssteigerung um bis zu 10% durch optimierte Produktions- und Transportplanung.</td>
+              </tr>
+          </table>
+          <div >
+          <p style="text-align: right;"> <a href="#"> Mehr Details</a></p>
+          </div>
+      </div>
 
+    <h3 style="margin-left: 48px;"> Logistik </h3>
 
-    
+    <div class="card" style="margin-left: 48px;">
+        <h4>Optimierung von Railcar-Flotten in der chemischen Industrie </h4>
+          <table>
+              <tr >
+                  <th style="width: 200px;vertical-align: middle;"><strong>Fragestellung</strong></th>
+                  <th>Railcar-Flotten stellen einen erheblichen Kostenfaktor in der chemischen 
+                    Industrie dar. Im Rahmen von Programmen zur Optimierung des Working Capitals ist es essenziell, diese Flotten hinsichtlich Anzahl, Volumen und Einsatzfähigkeit 
+                    effizient zu gestalten.</th>
+              </tr>
+              <tr>
+                  <th><strong>Erfolg</strong></td>
+                  <th>Kosteneinsparung in Höhe von ca. 2 Mio Euro.</td>
+              </tr>
+          </table>
+          <div >
+          <p style="text-align: right;"> <a href="#"> Mehr Details</a></p>
+          </div>
+      </div>
+
+      <h3 style="margin-left: 48px;"> Supply Chain Management </h3>
+ 
+      <div class="card" style="margin-left: 48px;">
+        <h4>Kostentransparenz zur Unterstützung strategischer Planung in chemischen Wertschöpfungsketten </h4>
+          <table>
+              <tr >
+                  <th style="width: 200px;vertical-align: middle;"><strong>Fragestellung</strong></th>
+                  <th>ntwicklung eines mathematischen Ansatzes zur präzisen Kostenallokation und 
+                    Entscheidungsunterstützung für langfristige Strategien 
+                    wie Kapazitätsinvestitionen und Marktausrichtung..</th>
+              </tr>
+              <tr>
+                  <th><strong>Erfolg</strong></td>
+                  <th>Deckungsbeitragssteigerung um bis zu 15%.</td>
+              </tr>
+          </table>
+          <div >
+          <p style="text-align: right;"> <a href="#"> Mehr Details</a></p>
+          </div>
+      </div>
+
+          <!--Contact_section start -->
+    <div class="contact_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="touch_text">Kontaktieren Sie uns</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contact_section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="map_icon">
+                            <img src="assets/call-icon.png" style="max-width: 100%; padding-left: 30px; width: 50%; height: 50%;">
+                            <p class="email-text"><a href="#">004955555555</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="map_icon">
+                            <img src="assets/email-icon.png" style="max-width: 100%; padding-left: 30px; width: 56%; height: 56%;">
+                            <p class="email-text"><a href="#">info@deu-seminar.de</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         &copy; dEU - Seminar für datenbasierte Entscheidungen für Unternehmer
-        &nbsp;|&nbsp; Design by Markus Frey</a>
+        &nbsp;|&nbsp; Design by Markus Frey</a> &nbsp;|&nbsp; <a href="impressum">Impressum</a>
     </footer>
+
 </body>
+</html>
