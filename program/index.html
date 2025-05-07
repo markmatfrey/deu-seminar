@@ -5,6 +5,8 @@
     <base href="..">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 
 
     <meta name="description" content="deu-seminar">
     <meta name="resource-type" content="document">
@@ -14,6 +16,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <style>
+        /* Create two unequal columns that floats next to each other */
+/* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+
         .collapsible {
             background-color: #777;
             color: white;
@@ -52,11 +68,17 @@
             margin-left: 24px;
             width: 100%;
         }
+        .td {
+            width: 20%;
+            text-align: left;
+            padding: 8px;
+        }
 
          /* My hacky way of making the site mobile-friendly */
-    @media only screen and (max-width: 1100px) {
-     .content_collapsible{font-size:10px;}
-    }
+        @media only screen and (max-width: 1100px) {
+            .content_collapsible{font-size:10px;}
+            th,td,tr{font-size:1.2em; line-height:1em;}
+        }
     </style>
 </head>
 
@@ -104,274 +126,302 @@
     <h2 >Agenda</h2>
     
     <div>
-    <button class="collapsible">22. Oktober - <strong>Ankunft und erstes Kennelernen</strong></button>
-        <div class="content_collapsible">
-            <table style="margin-left:48px;">
-                <tr>
-                    <td class="date">
-                        18:00 Uhr - offen
-                    </td>
-                    <td >
-                        <strong>Check-In und gemeinsames Abendessen </strong> (optional)
-                    </td>
-                </tr>
-            </table>
+        <div class="row">
+            <div class="leftcolumn" styl="width: 10%;">
+                <button class="collapsible">22. Oktober - <strong>Ankommen und Kennenlernen (optional)</strong></button>
+                    <div class="content_collapsible">
+                        <table style="margin-left:48px;">
+                            <tr>
+                                <td class="date">
+                                    18:30 Uhr - 22 Uhr
+                                </td>
+                                <td class="abstract">
+                                    <strong> Erste Einblicke - informeller Austausch unter Entscheidern </strong> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <br />
+                    <br />
+                    
+                    <button class="collapsible">23. Oktober - <strong>Grundlagen und Einordnung</strong></button>
+                    <div class="content_collapsible">
+
+                        <table style="margin-left:48px;">
+                            <tr>
+                                <td class="date">
+                                    09:25 Uhr - 10:00 Uhr
+                                </td>
+                                <td >
+                                    <strong>Begrüßung & Vorstellungsrunde</strong> <br />
+                                    <em>"Wer sind Sie und was bringt Sie hierher?"</em>
+                                </td>
+                            </tr>
+                        </table>
+
+                    <table style="margin-left:48px; width: 10%;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                10:00 Uhr - 10:50 Uhr
+                            </td>
+                            <td >
+                                <strong>Session 1: Datengetriebene Entscheidungen verstehen - Potenziale, <br />
+                                Herausforderungen und Perspektiven</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li >Überblick über datenbasierte Entscheidungsprozesse</li>
+                                    <li>Einordnung aktueller Trends wie KI, Digitalisierung, <br /> 
+                                        Data Science und mathematische Optimierung</li>
+                                    <li>Bedeutung datenbasierter Strategien im unternehmerischen Kontext</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="2">
+                                10:50 Uhr - 11:10 Uhr
+                            </td>
+                            <td class="title-special">
+                                <em>Kaffeepause</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <!-- Kept for Spacing -->
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                11:10 Uhr - 11:45 Uhr
+                            </td>
+                            <td >
+                                <strong>Session 2: Wer entscheidet was - Akteure, Kostenstrukturen und <br /> Perspektiven 
+                                    im Unternehmen</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li>Entscheidungsstrukturen in ihrem Unternehmen (abh. von den <br />
+                                        teilnehmenden Unternehmen)</li>
+                                    <li>Unterschiedliche Blickwinkel von Produktion, Controlling, <br />
+                                        Management etc.</li>
+                                    <li>Identifikation relevanter Kostenarten und Einflussgrößen</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                10:00 Uhr - 11:00 Uhr
+                            </td>
+                            <th style="width: 10%;">
+                                <strong>Session 3: Von der Realität ins Modell - Datenakquise, <br /> Datenmodellierung und Vorbereitung</strong>
+                            </th >
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li>Anforderungen an Datenqualität und -verfügbarkeit</li>
+                                    <li>Methoden der Datenerhebung und -integration</li>
+                                    <li>Aufbau eines strukturierten, entscheidungsrelevanten Datenmodells</li>
+                                    <li>Prozess eines datenbasierten Entscheidungsprojektes</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="margin-left:48px; ">
+                        <tr >
+                            <td class="date" rowspan="3">
+                                10:00 Uhr - 11:00 Uhr
+                            </td>
+                            <td style="width: 100px;" >
+                                <strong> Session 4: Optimieren statt Raten - Mathematische Modellierung und <br />
+                                    Optimierung</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li>Einführung in die Modellbildung und mathematische Optimierung</li>
+                                    <li>Praxisbeispiele aus der Industrie</li>
+                                    <li>Bewertung und Umsetzung von Optimierungslösungen</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                10:00 Uhr - 11:00 Uhr
+                            </td>
+                            <td class="title-special">
+                                <strong>Abendessen und gemütliches beisammensein</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <!-- Kept for Spacing -->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br />
+                <br />
+                
+                <button class="collapsible">24. Oktober - <strong>Werkzeuge, Methoden und Anwendung</strong></button>
+                
+                <div class="content_collapsible">
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                9:00 Uhr - 10:00 Uhr
+                            </td>
+                            <td style="width: 10px;">
+                                <strong >Session 5: Prognosen und Künstliche Intelligenz -
+                                    Entscheidungen <br /> antizipieren</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li>Möglichkeiten und Grenzen von Vorhersagemodellen</li>
+                                    <li>Maschinelles Lernen zur Prognose betrieblicher Kennzahle</li>
+                                    <li>Verknüpfung von Prognose und Entscheidungsfindung</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="2">
+                                10:00 Uhr - 10:30 Uhr
+                            </td>
+                            <td class="title-special">
+                                Kaffee- und Teepause
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <!-- Kept for Spacing -->
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                9:00 Uhr - 10:00 Uhr
+                            </td>
+                            <td >
+                                <strong>Session 6: Vom Modell zur Umsetzung - 
+                                    Prozesse, Tools <br /> und Integration</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                <ul style="margin-left: 15px;">
+                                    <li>Aufbau von datengetriebenen Entscheidungsprozessen im Alltag</li>
+                                    <li>Auswahl geeigneter Softwaretools und Technologien</li>
+                                    <li>Vorgehensweise zur schrittweisen Digitalisierung unternehmerischer <br /> Entscheidungen</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-left:48px;">
+                        <tr>
+                            <td class="date" rowspan="3">
+                                9:00 Uhr - 10:00 Uhr
+                            </td>
+                            <td >
+                                <strong>Private Beratungsgespräche mit den Dozenten</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="abstract">
+                                Die Möglichkeit private und vertrauliche Gespräche mit den Dozenten über die Firmeninterne Herausforderungen zu führen (optional).
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="rightcolumn" style="text-align: center; vertical-align: middle; margin-top: 50px;">
+                <strong>Agenda <br /> </strong> 
+                <i class="material-icons">download</i>
+                <br />
+                <!-- <p>Klicke auf den Button, um die Agenda als PDF herunterzuladen:</p> -->
+                <a href="program/Seminaragenda_dEU.pdf" download>
+                    <!--<button>Seminaragenda.pdf</button>-->
+                    <img src="assets/pdf_symbol.png" alt="pdf" width="69" height="100">
+                </a>        
+            </div>
         </div>
     </div>
-        <br />
-        <br />
-        
-        <button class="collapsible">23. Oktober - <strong>Grundlagen und Einordnung</strong></button>
-        <div class="content_collapsible">
-            <table style="margin-left:48px;">
-                <tr>
-                    <td class="date">
-                        08:00 Uhr - 09:00 Uhr
-                    </td>
-                    <td >
-                        <strong>Ankunft und Check-In </strong> (optional)
-                    </td>
-                </tr>
-            </table>
-
-        <table style="margin-left:48px; width: 10%;">
-            <tr>
-                <td class="date" rowspan="3">
-                    09:00 Uhr - 10:00 Uhr
-                </td>
-                <td style="max-width: 1%;">
-                    <strong>Session 1: Datengetriebene Entscheidungen verstehen – Potenziale, 
-                    Herausforderungen und <br />
-                    Perspektiven</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract" style="max-width: 1%;">
-                    <ul style="margin-left: 15px;">
-                        <li >Überblick über datenbasierte Entscheidungsprozesse</li>
-                        <li>Einordnung aktueller Trends wie KI, Digitalisierung, Data Science und mathematische Optimierung</li>
-                        <li>Bedeutung datenbasierter Strategien im unternehmerischen Kontext</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="2">
-                    10:00 Uhr - 10:30 Uhr
-                </td>
-                <td class="title-special">
-                    Kaffee- und Teepause
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <!-- Kept for Spacing -->
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    10:00 Uhr - 11:00 Uhr
-                </td>
-                <td >
-                    <strong>Session 2: Wer entscheidet was – Akteure, Kostenstrukturen und Perspektiven 
-                        im Unternehmen</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <ul style="margin-left: 15px;">
-                        <li>Entscheidungsstrukturen in ihrem Unternehmen (abh. von den teilnehmenden Unternehmen)</li>
-                        <li>Unterschiedliche Blickwinkel von Produktion, Controlling, Management etc.</li>
-                        <li>Identifikation relevanter Kostenarten und Einflussgrößen</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    10:00 Uhr - 11:00 Uhr
-                </td>
-                <td >
-                    <strong>Session 3: Von der Realität ins Modell – Datenakquise, Datenmodellierung und Vorbereitung</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <ul style="margin-left: 15px;">
-                        <li>Anforderungen an Datenqualität und -verfügbarkeit</li>
-                        <li>Methoden der Datenerhebung und -integration</li>
-                        <li>Aufbau eines strukturierten, entscheidungsrelevanten Datenmodells</li>
-                        <li>Prozess eines datenbasierten Entscheidungsprojektes</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    10:00 Uhr - 11:00 Uhr
-                </td>
-                <td >
-                    <strong>Session 4: Optimieren statt Raten – Mathematische Modellierung und Optimierung</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <ul style="margin-left: 15px;">
-                        <li>Einführung in die Modellbildung und mathematische Optimierung</li>
-                        <li>Praxisbeispiele aus der Industrie</li>
-                        <li>Bewertung und Umsetzung von Optimierungslösungen</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    10:00 Uhr - 11:00 Uhr
-                </td>
-                <td class="title-special">
-                    <strong>Abendessen und gemütliches beisammensein</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <!-- Kept for Spacing -->
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <br />
-    <br />
     
-    <button class="collapsible">24. Oktober - <strong>Werkzeuge, Methoden und Anwendung</strong></button>
-    <div class="content_collapsible">
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    9:00 Uhr - 10:00 Uhr
-                </td>
-                <td >
-                    <strong>Session 5: Prognosen und Künstliche Intelligenz – 
-                        Entscheidungen antizipieren</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <ul style="margin-left: 15px;">
-                        <li>Möglichkeiten und Grenzen von Vorhersagemodellen</li>
-                        <li>Maschinelles Lernen zur Prognose betrieblicher Kennzahle</li>
-                        <li>Verknüpfung von Prognose und Entscheidungsfindung</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="2">
-                    10:00 Uhr - 10:30 Uhr
-                </td>
-                <td class="title-special">
-                    Kaffee- und Teepause
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <!-- Kept for Spacing -->
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    9:00 Uhr - 10:00 Uhr
-                </td>
-                <td >
-                    <strong>Session 6: Vom Modell zur Umsetzung – 
-                        Prozesse, Tools und Integration</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    <ul style="margin-left: 15px;">
-                        <li>Aufbau von datengetriebenen Entscheidungsprozessen im Alltag</li>
-                        <li>Auswahl geeigneter Softwaretools und Technologien</li>
-                        <li>Vorgehensweise zur schrittweisen Digitalisierung unternehmerischer Entscheidungen</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-left:48px;">
-            <tr>
-                <td class="date" rowspan="3">
-                    9:00 Uhr - 10:00 Uhr
-                </td>
-                <td >
-                    <strong>Private Beratungsgespräche mit den Dozenten</strong>
-                </td>
-            </tr>
-            <tr>
-                <td class="abstract">
-                    Die Möglichkeit private und vertrauliche Gespräche mit den Dozenten über die Firmeninterne Herausforderungen zu führen (optional).
-                </td>
-            </tr>
-        </table>
+    
+    
+<!--Contact_section start -->
+<div class="contact_main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="touch_text">Kontaktieren Sie uns</h2>
+            </div>
+        </div>
     </div>
-
-    <!--Contact_section start -->
-    <div class="contact_main">
+    <div class="contact_section_2">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="touch_text">Kontaktieren Sie uns</h2>
-                </div>
-            </div>
-        </div>
-        <div class="contact_section_2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="map_icon">
-                            <img src="assets/call-icon.png" style=" padding-left: 30px; width: 50%; height: 50%;">
-                            <p class="email-text"><a href="#">004955555555</a></p>
-                        </div>
+                <div class="col-sm-6">
+                    <div class="map_icon">
+                        <img src="assets/call-icon.png" style="max-width: 100%; padding-left: 30px; width: 50%; height: 50%;">
+                        <p class="email-text"><a href="#">004955555555</a></p>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="map_icon">
-                            <img src="assets/email-icon.png" style=" padding-left: 30px; width: 56%; height: 56%;">
-                            <p class="email-text"><a href="#">info@deu-seminar.de</a></p>
-                        </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="map_icon">
+                        <img src="assets/email-icon.png" style="max-width: 100%; padding-left: 30px; width: 56%; height: 56%;">
+                        <p class="email-text"><a href="#">info@deu-seminar.de</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+        <footer>
+            &copy; dEU - Seminar für datenbasierte Entscheidungen für Unternehmer
+            &nbsp;|&nbsp; Design by Markus Frey</a> &nbsp;|&nbsp; <a href="impressum">Impressum</a>
+        </footer>
 
-    <footer>
-        &copy; dEU - Seminar für datenbasierte Entscheidungen für Unternehmer
-        &nbsp;|&nbsp; Design by Markus Frey</a> &nbsp;|&nbsp; <a href="impressum">Impressum</a>
-    </footer>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-            this.classList.toggle("activeCol");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
-    </script>
-</body>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("activeCol");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+    </body>
 </html>
