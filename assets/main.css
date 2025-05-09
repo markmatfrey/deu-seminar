@@ -87,14 +87,27 @@
     justify-content: space-around;
 }
  /*a, p a {text-decoration:underline; text-decoration-color:#b8860b;}*/
- ul{ margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
- ul li{ margin:0px auto 0px auto; padding:0px; text-align:left;}
+ ul{ 
+    margin:24px auto 24px auto; 
+    padding:0px; 
+    width:800px; 
+    text-align:left;
+}
+ ul li{ 
+    margin:0px auto 0px auto; 
+    padding:0px; 
+    text-align:left;
+}
  /*ul{margin:24px auto 24px auto; padding:0px; width:400px; text-align: left;}*/
  /*ul li{margin:0px auto 0px auto; padding:0px; text-align:left;}*/
 
  
- i,em{font-style:italic;}
- b,strong{font-weight:bold;}
+ i,em{
+    font-style:italic;
+}
+ b,strong{
+    font-weight:bold;
+}
  sup{
      vertical-align: super;
      font-size: 0.8em;
@@ -118,7 +131,12 @@
  }
  
  /* Website Banner */
- .bottom-left {color: #032c48; font-size:1.5em; text-align: left; padding: 0px 50px 27px 0px;}
+ .bottom-left {
+    color: #032c48; 
+    font-size:1.5em; 
+    text-align: left; 
+    padding: 0px 50px 27px 0px;
+}
 
  .contact_main{
 	width: 100%;
@@ -151,9 +169,16 @@
  .year{color: #032c48; font-size:0.67em; font-weight: lighter;}
  
  /* Navigation Links (Home, Registration, etc) */
- table.navigation{width:800px;}
- td.navigation{font-size:1em; white-space:nowrap; width:20%; text-align:center; 
-    vertical-align:middle; padding:0px 0px 0px 0px;}
+ table.navigation{
+    width:800px;
+}
+ td.navigation{
+    font-size:1em; 
+    white-space:nowrap; 
+    width:20%; text-align:center; 
+    vertical-align:middle; 
+    padding:0px 0px 0px 0px;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 60px;
