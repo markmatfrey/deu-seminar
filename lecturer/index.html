@@ -3,14 +3,30 @@
 
 <head >
     <base href="..">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="deu-seminar">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title >Dozenten des Seminars dEU</title>
+    <style>
+     @media only screen and (max-width: 1100px) {
+     a{font-size:1em;}
+    }
+     </style>
 </head>
 
 <body>
@@ -33,33 +49,48 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg">
-        <div >
-                <ul  class="navbar-nav mr-auto">
-                    <li style="padding-right: 20px; font-size: 16px; letter-spacing: 0.5px; display:flex; justify-content: space-between;">
-                        <strong style="font-size: 18px;">Verlinkungen:</strong>
-                    </li>
-                    <li class="nav-item active; 20px;" style="display:flex; justify-content: space-between;">
-                        <a style="padding-right: 20px; font-size: 18px;" title="deu-seminar" href="index.html">Startseite</a> </li>
-                    <li class="nav-item" style="display:flex; justify-content: space-between;">
-                        <a style="padding-right: 20px; font-size: 18px;" title="Programmpunkte" href="program">Agenda</a></li>
-                    <li class="nav-item" style="display:flex; justify-content: space-between;">
-                        <a style="padding-right: 20px; font-size: 18px;" title="Registrierung für das Seminar" href="registration/">Anmeldung</a></li>
-                    <li class="nav-item" style="display:flex; justify-content: space-between;">
-                        <a style="padding-right: 20px; font-size: 18px;" title="Tagungshotel" href="directions/">Tagungsort</a></li>
-                    <li class="nav-item" style="display:flex; justify-content: space-between;">
-                        <a class = "active" style="padding-right: 20px; font-size: 18px; text-align: center;" title="Referenten" href="lecturer/">Referenten</a></li>
-                    <li class="nav-item" style="display:flex; justify-content: space-between;">
-                        <a style="padding-right: 20px; font-size: 18px;" title="Durchgeführte Referenzprojekte" href="projects/">Referenzen</a></li>
-                </ul>
+   <!--Navigationsbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a style="padding-right: 20px; font-size: 18px;" title="deu-seminar" href="index.html">Startseite</a> </li>
+                </li>
+                <li class="nav-item">
+                    <a style="padding-right: 20px; font-size: 18px;" title="Programmpunkte" href="program">Agenda</a></li>
+                </li>
+                <li class="nav-item">
+                    <a style="padding-right: 20px; font-size: 18px;" title="Registrierung für das Seminar" href="registration/">Anmeldung</a></li>
+                </li>
+                <li class="nav-item">
+                    <a style="padding-right: 20px; font-size: 18px;" title="Tagungshotel" href="directions/">Tagungsort</a></li>
+                </li>
+                <li class="nav-item">
+                    <a class = "active" style="padding-right: 20px; font-size: 18px; text-align: center;" title="Referenten" href="lecturer/">Referenten</a>
+                </li>
+                <li class="nav-item">
+                    <a style="padding-right: 20px; font-size: 18px;" title="Durchgeführte Referenzprojekte" href="projects/">Referenzen</a></li>
+                </li>            
+            </ul>
         </div>
     </nav>
-
+ 
 
     <h2>Referenten</h2>
-    <div class="flex-container">
-        <div class="content-wrap about_content">
-            <p style="margin-left:24px">
+
+    <div style="margin-left: 24px; width: 700px;">
+        Das Lösen von herausforderenden Entscheidungsfragungen aus Industrie und Wirtschaft mit Hilfe von datenbasierten Verfahren 
+        ist unsere Leidenschaft. Zusammen haben wir uns über mehrere Jahrzente sowohl in der freien Wirtschaft als auch in der Forschung mit 
+        datenbasierte Entscheidungsproblemen beschäftigt. Dabei waren wir nicht nur Berater für unsere Kunden, sondern auch Entwickler und Implementierer
+        von datenbasierten Lösungen.  
+    </div>
+
+    <div class="flex-container" style="display: flex; flex-direction: row;">
+        <div >
+            <p style="margin-left:24px; width: 700px;">
                 <strong>Prof. Dr. Markus Frey</strong> &emsp; Markus promovierte im Bereich 
                 der mathematischen Optimierung an der Technischen Universität München. 
                 Nach einem Research Fellow am Massachusetts Institute of Technology 
@@ -82,15 +113,15 @@
                 <a href="https://www.thi.de/personen/prof-dr-markus-frey/">Technischen Hochschule Ingolstadt</a>.
             </p>
         </div>
-        <div class="about_img_container" style="margin : 40px;">
-            <p >
+        <div class="about_img_container" style="margin : 0px; ">
+            <p style="margin-top: 120px; margin-left: 10px;">
                 <img  src="assets/THI00547_FreyMarkus.jpg" alt="Prof. Dr. Markus Frey" width="120" height="150"   >
             </p>
         </div>
     </div>
-    <div class="flex-container">
-        <div class="content-wrap about_content">
-            <p style="margin-left:24px">
+    <div class="flex-container" style="display: flex; flex-direction: row;">
+        <div >
+            <p style="margin-left:24px; width: 700px;">
                 <strong>Prof. Dr. Josef Kallrath</strong> &emsp; Josef Kallrath promovierte 1989 
                 in Astrophysik an der Universität Bonn (Deutschland). Er ist Professor an der 
                 University of Florida (Gainesville, FL) und löst reale Probleme in der 
@@ -120,15 +151,15 @@
                 die Konstruktion maßgeschneiderter Lösungsalgorithmen.
             </p>
         </div>
-        <div class="about_img_container" style="margin : 40px;">
-            <p>
+        <div class="about_img_container" style="margin : 0px;">
+            <p style="margin-top: 130px; margin-left: 10px;">
                 <img src="assets/Josef-Seminar.jpg" alt="Prof. Dr. Josef Kallrath" width="120" height="150">
             </p>
         </div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container" style="display: flex; flex-direction: row;">
         <div class="content-wrap about_content">
-            <p style="margin-left:24px">
+            <p style="margin-left:24px; width: 700px;">
                 <strong>Dr. Tim Varelmann</strong> &emsp; Tim Varelmann hat Computational 
                 Engineering Science an der RWTH Aachen, der University of Queensland und 
                 dem Massachusetts Institute of Technology studiert. Anschließend promovierte 
@@ -150,8 +181,8 @@
                 oder beim Kochen und Verspeisen leckerer Gerichte in guter Gesellschaft.
             </p>
         </div>
-        <div class="about_img_container" style="margin : 40px;">
-            <p>
+        <div class="about_img_container" style="margin : 0px;">
+            <p style="margin-top: 130px; margin-left: 10px;">
                 <img src="assets/TimV.jpg" alt="Tim Varelmann" width="14%" height="14%">
             </p>
         </div>
@@ -171,13 +202,13 @@
                     <div class="col-sm-6">
                         <div class="map_icon">
                             <img src="assets/call-icon.png" style="max-width: 100%; padding-left: 30px; width: 50%; height: 50%;">
-                            <p class="email-text" style="text-align:left; margin-left:-30px"><a href="#">+49 (0)173 8183746</a></p>
+                            <p class="email-text" style="text-align:left; margin-left:-30px"><a class = "kontakt" href="#">+49 (0)173 8183746</a></p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="map_icon">
                             <img src="assets/email-icon.png" style="max-width: 100%; padding-left: 30px; width: 56%; height: 56%;">
-                            <p class="email-text"><a href="#">info@deu-seminar.de</a></p>
+                            <p class="email-text"><a class = "kontakt" href="#">info@deu-seminar.de</a></p>
                         </div>
                     </div>
                 </div>
