@@ -179,6 +179,7 @@
     color: rgba(16, 16, 73, 0.943);
     font-size: 16px;
     letter-spacing: 0.5px;
+
 }
 
 .navbar-nav .mr-auto {
@@ -189,6 +190,7 @@
     display: block;
     list-style-type: none;  
     padding: 0; 
+    
 }
     /* overflow: hidden; 
     position:fixed; 
@@ -201,7 +203,7 @@
     float: left;
 }
 .navbar-nav .mr-auto li.last {
-    float: right;
+    float: left;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -214,6 +216,7 @@
 
 .navbar-light .navbar-nav .active > .nav-link{
     color: #fb2323;
+    float: left;
 }
 
 .active {
@@ -249,14 +252,25 @@
      p{font-size:1em; line-height:1.5em;}
      ul{font-size: 1em;}
      .li{font-size: 1em;}
-     th, td, tr{font-size:1em; line-height:2em;}
+     
+     .material-icons {
+            font-size:0em;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 0,
+            'GRAD' 0,
+            'opsz' 0,
+    }
+     
+     th, td, tr{font-size:.8em; line-height:2em;}
      td.date{font-size:1em; padding-top:0.5em;}
      td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
      table.footer{font-size:0.33em;}
      a.kontakt{font-size:0.7em;}
-     body {overflow: visible; width: 50%;}
+     body {overflow: visible; width: 100%;}
      html{overflow: visible;}
-     li{font-size:1.5em; line-height:1.5em;}
+     li{font-size:1em; line-height:1.5em;}
+     li.checkmark{font-size: 1em;}
      .contact_section_2{align-items: center;}
        .page .col-sm-3 {
     width: 25%;
