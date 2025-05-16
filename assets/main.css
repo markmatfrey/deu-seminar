@@ -172,6 +172,8 @@
  
 
 .navbar-expand-lg .navbar-nav .nav-link {
+    width: 100%;
+    position: fixed;
     padding-right: 60px;
     padding-left: 0;
     color: rgba(16, 16, 73, 0.943);
@@ -180,6 +182,8 @@
 }
 
 .navbar-nav .mr-auto {
+    width: 100%;
+    position: fixed;
     width: 100%;
     margin: 0;
     display: block;
@@ -192,6 +196,8 @@
     background-color: #f2f2f2;*/
 
 .navbar-nav.mr-auto li {
+    width: 100%;
+    position: fixed;
     float: left;
 }
 .navbar-nav .mr-auto li.last {
