@@ -21,10 +21,9 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
     <title >dEU - Referenzen</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     * {
         box-sizing: border-box;
@@ -37,40 +36,14 @@
         text-align: center;
         background: white;
      }
-
-    /* Create two unequal columns that floats next to each other */
-    /* Left column */
-    .leftcolumn {   
-        float: left;
-        width: 75%;
-    }
-
-    /* Right column */
-    .rightcolumn {
-        float: left;
-        width: 25%;
-        padding-left: 20px;
-    }
-
-    /* Fake image */
-    .fakeimg {
-        background-color: #aaa;
-        width: 100%;
-        padding: 20px;
-    }
-
     /* Add a card effect for articles */
     .card {
         background-color: white;
         padding: 20px;
         margin-top: 20px;
     }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
     /* Footer */
@@ -83,10 +56,13 @@
 
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-    }
+        .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+        }
+        .p {
+            display: inline-block;
+            word-break: break-word;}
     }
     </style>
 </head>
@@ -146,14 +122,15 @@
 <div >
   <h2>Referenzprojekte</h2>
 </div>
-<p>Auf dieser Seite präsentieren wir eine Auswahl an Referenzprojekten, 
+<p >
+    Auf dieser Seite präsentieren wir eine Auswahl an Referenzprojekten, 
     die wir in Kooperation mit unseren 
     Industriepartner durchgeführt haben. Für weitere Details klicken Sie bitte 
-    jeweils auf den Link "Mehr Details".
-</p>
+    auf den jeweiligen Blogeintrag.
+</p >
 
 <h3 style="margin-left: 48px;"> Produktion</h3>
-
+<a href="projects/Proj_Cutting.html" target="_blank">
     <div class="card" style="margin-left: 48px;">
       <h4>Optimale Verschnittplanung </h4>
         <table>
@@ -168,11 +145,10 @@
                 <th>Kosteneinsparung in Höhe von 285.000 Euro pro Jahr</td>
             </tr>
         </table>
-        <div >
-        <p style="text-align: right;"> <a href="projects/Proj_Cutting.html" target="_blank">Mehr Details</a></p>
-        </div>
     </div>
-
+    </a>
+    
+<a href="projects/Proj_Distr.html" target="_blank">
     <div class="card" style="margin-left: 48px;">
         <h4>Optimale weltweite Produktionsplanung in der chemischen Industrie </h4>
           <table>
@@ -188,12 +164,12 @@
               </tr>
           </table>
           <div >
-          <p style="text-align: right;"> <a href="projects/Proj_Distr.html" target="_blank">Mehr Details</a></p>
           </div>
       </div>
+      </a>
 
     <h3 style="margin-left: 48px;"> Logistik </h3>
-
+<a href="projects/Proj_RailCar.html" target="_blank">
     <div class="card" style="margin-left: 48px;">
         <h4>Optimierung von Railcar-Flotten in der chemischen Industrie </h4>
           <table>
@@ -207,11 +183,12 @@
                   <th>Kosteneinsparung in Höhe von ca. 2 Mio Euro.</td>
               </tr>
           </table>
-            <p style="text-align: right;"> <a href="projects/Proj_RailCar.html" target="_blank">Mehr Details</a></p>
       </div>
+      </a>
 
       <h3 style="margin-left: 48px;"> Supply Chain Management </h3>
  
+      <a href="projects/Proj_ValueChain.html" target="_blank">
       <div class="card" style="margin-left: 48px;">
         <h4>Kostentransparenz zur Unterstützung strategischer Planung in chemischen Wertschöpfungsketten </h4>
           <table>
@@ -227,38 +204,40 @@
               </tr>
           </table>
           <div >
-          <p style="text-align: right;"> <a href="projects/Proj_ValueChain.html" target="_blank">Mehr Details</a></p>
           </div>
       </div>
+      </a>
 
-          <!--Contact_section start -->
+    <!--Contact_section start -->
     <div class="contact_main">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-md-center justify-content-start">
                 <div class="col-sm-12">
                     <h2 class="touch_text">Kontaktieren Sie uns</h2>
                 </div>
             </div>
-        </div>
-        <div class="contact_section_2">
-            <div class="container">
-                <div class="row" >
-                    <div class="col-sm-6">
-                        <div class="map_icon">
-                            <img src="assets/call-icon.png" style="max-width: 100%; padding-left: 30px; width: 50%; height: 50%;">
-                            <p class="email-text" style="text-align:left; margin-left:-30px"><a clas="kontakt" href="tel:+491738183746">+49 (0)173 8183746</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="map_icon">
-                            <img src="assets/email-icon.png" style="max-width: 100%; padding-left: 30px; width: 56%; height: 56%;">
-                            <p class="email-text"><a class="kontakt" href="mailto:info@deu-seminar.de">info@deu-seminar.de</a></p>
-                        </div>
+            <div class="row justify-content-md-center justify-content-start mt-3" >
+                <div class="col-sm-3 text-center" >
+                    <div class="map_icon" >
+                        <img src="assets/call-icon.png" 
+                            style="width: 16%; height: 16%;">
+                        <p  >
+                            <a class="kontakt" href="tel:+491738183746">+49 (0)173 8183746</a>
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="col-sm-3 text-center">
+                    <div  >
+                        <img src="assets/email-icon.png" style="
+                            width: 20%; height: 20%;">
+                        <p class="email-text" >
+                            <a class="kontakt" href="mailto:info@deu-seminar.de">info@deu-seminar.de</a>
+                        </p>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </div>
 
     <footer>
         &copy; dEU - Datenbasierte Entscheidungen für Unternehmer
