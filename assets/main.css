@@ -167,7 +167,8 @@
 
 
  /* Conference Title Logo */
- .title1{color: #032c48; font-size: 2.5em; text-align: center; margin-bottom: 20px; padding-top: 10px; line-height: 1.38; font-weight: 900;} 
+ .title1{color: #032c48; font-size: 2.5em; text-align: left; 
+    margin-bottom: 20px; padding-top: 10px; line-height: 1.38; font-weight: 900;} 
  .year{color: #032c48; font-size:0.67em; font-weight: lighter;}
  
 
@@ -275,6 +276,10 @@
        .page .col-sm-3 {
     width: 25%;
   }
+    span.small {
+        font-size: .1px;
+    }
+
     .page .col-sm-2 {
         width: 50%;
     }
