@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang='en'>
 
 <head >
@@ -26,6 +26,7 @@
     <style>
         ul.checkmark {
         list-style: none;
+        margin-left: 0px;
         }
         li.checkmark {
             position: relative;
@@ -39,7 +40,6 @@
             height: 1em;
             background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>") no-repeat;
         }
-        
         .material-icons {
             font-size:30px;
             font-variation-settings:
@@ -109,7 +109,6 @@
         Willkommen 
     </h2>
     <div >
-        <p >
             Wollen Sie datenbasierten Entscheidungen in Ihrem Unternehmen verbessern und weiter ausbauen? 
             Wollen Sie Entscheidungsprobleme klassifizieren können, um so die richtigen Schritte für deren korrekte Umsetzung durchzuführen? 
             Wir helfen Ihnen als Unternehmer dabei, für Ihr Unternehmen effizientere, robustere, 
@@ -126,7 +125,8 @@
             getroffen und etabliert werden können, stets von den Gegebenheiten abhängig und braucht eine 
             differenzierte in Augenscheinnahme. <br />
           
-            <img src="assets/MenschProzessTech.png" alt="Dreiklang" width="55%" height="55%" ALIGN="right" >
+            <img src="assets/MenschProzessTech.png" 
+            alt="Dreiklang" width="55%" height="55%" ALIGN="right" >
             
             <br />
             Aus dieser Beobachtung heraus haben wir ein Seminarkonzept für 
@@ -151,49 +151,45 @@
             mathematikbasierten, automatisierten Entscheidungsmodellen zu stellen und zu lösen sind, 
             so dass Sie in Ihrem Unternehmen 
             die Weichen stellen können, um in Zukunft besser datenbasiert zu entscheiden. 
-        
-
-        <hr style="width:30%; text-align:left; margin-left:24px; height: 50;">
-        
-        <p style="margin-left:72px">
-            Flyer <br />
-        <div style="margin-left: 0px; margin-top: -25px; margin-bottom: -30px;">
-            <i class="material-icons" style="margin-left: 72px;">download</i>
-            <br />
-                <!-- <p>Klicke auf den Button, um die Agenda als PDF herunterzuladen:</p> -->
-                <a style="margin-left:48px" href="assets/Flyer - dEU_20250513 - v10.pdf">
-                    <!--<button>Seminaragenda.pdf</button>-->
-                    <img style ="margin-left:20px ;" src="assets/Pic-Flyer.png" alt="Flyer" width="49" height="60">
-                </a>
-            </p>
-        </div >
-    </div >
-
-    <!---------------------------------------------------------->
-    <h2 >Zielgruppe</h2 >
-
-    <div >
-        <p >
-            <ul style="margin:48px; list-style: none;">
-                <li style="margin: 0 0 3px 0;"><strong>Führungskräfte</strong> und <strong>Entscheider</strong>, 
-                    die ihre Entscheidungen auf Basis von Daten und modernen Analysemethoden treffen wollen, 
-                    um Wettbewerbsvorteile zu erzielen.</li>
-                <li style="margin: 0 0 3px 0;"><strong>Funktionale Manager</strong> und <strong>Geschäftsleiter</strong>, die ihre analytischen Fähigkeiten 
-                    stärken möchten, um in einer daten- und algorithmengesteuerten Welt die 
-                    richtigen Fragen zu stellen.</li>              
-                <li style="margin: 0 0 3px 0;"><strong>Berater</strong>, die ihre Kunden auf der Grundlage von Daten beraten möchten, 
-                    um bessere und objektivierte Empfehlungen abzugeben.</li>
-            </ul >
-        </p >
+    </div>
+    <!--<ass="responsive"></p>-->
+    <hr style="width:30%; text-align:left; height: 50;">
+    <div class="row">
+        <a href="assets/Flyer - dEU_20250513 - v10.pdf">
+        <div class="column">
+             <i class="material-icons" style="margin-left: 24px; ">download</i>
+                Flyer 
+        </div>
+        </a>
     </div>
 
     <!---------------------------------------------------------->
-    <h2 >Was bekommen Sie und was nehmen Sie mit</h2>
+    <h2 >
+        Zielgruppe
+    </h2 >
+
+    <div >
+        <ul style="list-style: none;">
+            <li ><strong>Führungskräfte</strong> und <strong>Entscheider</strong>, 
+                die ihre Entscheidungen auf Basis von Daten und modernen Analysemethoden treffen wollen, 
+                um Wettbewerbsvorteile zu erzielen.</li>
+            <li ><strong>Funktionale Manager</strong> und <strong>Geschäftsleiter</strong>, die ihre analytischen Fähigkeiten 
+                stärken möchten, um in einer daten- und algorithmengesteuerten Welt die 
+                richtigen Fragen zu stellen.</li>              
+            <li ><strong>Berater</strong>, die ihre Kunden auf der Grundlage von Daten beraten möchten, 
+                um bessere und objektivierte Empfehlungen abzugeben.</li>
+        </ul >
+    </div>
+
+    <!---------------------------------------------------------->
+    <h2 >
+        Was bekommen Sie und was nehmen Sie mit
+    </h2>
         <div style="overflow-x:auto; ">   
             <p >
                 <table >
                     <tbody >
-                        <tr>
+                        <tr >
                             <td style="width:10%; vertical-align:middle; 
                             text-align:center;">
                                 <i class="material-icons">explore</i>
@@ -288,7 +284,7 @@
         <h2>
         Die Referenten
         </h2>
-        <p style="margin-left:24px">
+            <div >
 
             Wir sind ein Team aus Wissenschaftler und Praktiker, die zusammen seit mehreren 
             Jahrzehnten 
@@ -312,11 +308,11 @@
             Techniken und Herangehensweisen auch in Ihre Firma oder Organisation tragen. 
             Mehr über uns finden Sie unter <a href="lecturer/">Referenten.</a>
         
-        </p>
+            </div>
     <!---------------------------------------------------------->
     <h2 >Was ist uns wichtig</h2>
         <p >
-            <ul class = "checkmark" style="margin:60px;">
+            <ul class = "checkmark" >
                 <li class="checkmark" style="margin: 0 0 3px 0;">Der <strong>persönliche Kontakt</strong> ist uns sehr wichtig, daher findet das Seminar nur in Präsenz statt. 
                         Dabei spielt insbesondere auch der Ort der Begegnung und des Wissensaustauschs eine wichtige Rolle. Mit Schloss Marbach und seiner Zielrichtung als ein 
                         Tagungsort für inspirierenden und wohltuender Atmospähre ist hierbei der perfekte Kooperationspartner, um 
