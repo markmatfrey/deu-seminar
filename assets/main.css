@@ -48,6 +48,10 @@
      width: 1000px;
      overflow-x: hidden;
  }
+
+ span.line {
+  display: inline-block;
+}
  
  consschrift {
     font-family: Consolas, "courier new";    
@@ -97,7 +101,7 @@
  h2{font-size:2em;}
  h3{font-size:1.5em;}
  h4{font-size:1em;}
- p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+ /*p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}*/
  
  .flex-container {
     display: flex;
@@ -239,6 +243,8 @@ ul.navbar-nav {
 .active {
     color: #fb2323;
 }
+
+div {margin-right:24px}
  
  /* The Table on the Program Page */
  td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
@@ -255,14 +261,10 @@ ul.navbar-nav {
  iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
  img.center{display:block; width:67%; margin:1em auto 2em auto;}
  
- /* Flyer Images */
- table.flyers{width:800px;}
- td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
- td.sponsor img{width: 100%}
 
-    div.gallery {
+div.gallery {
     border: 1px solid #ccc;
-    }
+}
 
 div.gallery:hover {
   border: 1px solid #777;
