@@ -244,7 +244,9 @@ ul.navbar-nav {
     color: #fb2323;
 }
 
-div {margin-right:24px}
+div {
+    margin-right:24px
+}
  
  /* The Table on the Program Page */
  td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
