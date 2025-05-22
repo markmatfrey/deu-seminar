@@ -107,16 +107,11 @@
     display: flex;
     justify-content: space-around;
 }
- /*a, p a {text-decoration:underline; text-decoration-color:#b8860b;}*/
- ul{ 
-    margin:0px 0px 0px 0px; 
-    padding:0px; 
-    width:800px; 
+
+ul{ 
     text-align:left;
 }
  ul li{ 
-    margin:0px 0px 0px 0px; 
-    padding:0px; 
     text-align:left;
 }
  /*ul{margin:24px auto 24px auto; padding:0px; width:400px; text-align: left;}*/
@@ -177,9 +172,12 @@
 
 
  /* Conference Title Logo */
- .title1{color: #032c48; font-size: 2.5em; text-align: left; 
-    margin-bottom: 20px; padding-top: 10px; line-height: 1.38; font-weight: 900;} 
- .year{color: #032c48; font-size:0.67em; font-weight: lighter;}
+ .title1{
+    color: #032c48; 
+    font-size: 2.5em; 
+    text-align: left; 
+    margin-bottom: 20px; padding-top: 10px; line-height: 1.38; font-weight: 900;
+} 
  
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -259,10 +257,10 @@ div {
  table.plenary{padding-top: 8px; background: #ffffff;}
  
  /* Registration and Directions iframes and Images */
- iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+ /*iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
  iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
  img.center{display:block; width:67%; margin:1em auto 2em auto;}
- 
+ */
 
 div.gallery {
     border: 1px solid #ccc;
@@ -356,8 +354,8 @@ div.desc {
      a.kontakt{font-size:0.7em;}
      body {overflow: visible; width: 100%;}
      html{overflow: visible;}
-     li{font-size:1em; line-height:1.5em; max-width: 60%;}
-     li.checkmark{font-size: 1em; max-width: 60%;}
+     li{font-size:1em; line-height:1.5em; }
+     li.checkmark{font-size: 1em; }
     
      .contact_section_2{
         width: 100%;
