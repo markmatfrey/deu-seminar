@@ -325,6 +325,10 @@ div.desc {
     ul{font-size: 1em;}
     .li{font-size: 1em;}
 
+    .headline {
+        margin-left:60px;
+    }
+
     .touch_text {
         width: 40%;
         margin: 0 auto;
